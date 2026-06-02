@@ -1,8 +1,14 @@
-fastapi
-uvicorn
-sqlalchemy
-asyncpg
-alembic
-python-jose
-passlib[bcrypt]
-pydantic-settings
+fastapi==0.115.6
+uvicorn[standard]==0.34.0  # сервер, который запускает FastAPI
+
+SQLAlchemy==2.0.36
+asyncpg==0.30.0 # драйвер для PostgreSQL
+alembic==1.14.0 # миграции базы данных
+
+pydantic==2.10.4 # проверка данных
+pydantic-settings==2.7.1
+
+python-jose[cryptography]==3.3.0 # JWT-токены
+passlib[bcrypt]==1.7.4 # хеширование паролей
+
+python-dotenv==1.0.1
